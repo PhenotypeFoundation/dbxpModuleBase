@@ -1,6 +1,6 @@
 class DbxpModuleBaseGrailsPlugin {
     // the plugin version
-    def version = "0.6.1.3"
+    def version = "0.6.2.0"
     // the version or versions of Grails the plugin is designed for
     def grailsVersion = "1.3.7 > *"
 
@@ -20,6 +20,8 @@ class DbxpModuleBaseGrailsPlugin {
 dbxpModuleBase is a Grails plugin that provides basic functionality to create a dbXP module that contains molecular
 data for studies defined in GSCF, the Generic Study Capture Framework.
 dbxpModuleBase is part of the Phenotype Database software ecosystem.
+
+As of version 0.6.2.0 this module is ready for grails 2.4.0 and higher
 '''
 	def documentation   = "https://github.com/thehyve/dbxpModuleBase/blob/master/README.md"
 	def license         = "APACHE"

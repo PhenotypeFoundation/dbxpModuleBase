@@ -1,5 +1,4 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
-<%@ page import="org.codehaus.groovy.grails.commons.ConfigurationHolder" %>
 <% /*
 	This layout can be used as a base for your module. It loads jquery, jquery-ui and jquery-datatables. It also
 	loads javascripts for the top navigation and pagination in datatables (see documentation below about pagination).
@@ -24,7 +23,7 @@
 				<li>
 					<a href="#" onClick="return false;">GSCF</a>
 					<ul class="subnav">
-						<li><g:link url="${org.codehaus.groovy.grails.commons.ConfigurationHolder.config.gscf.baseURL}">Go to GSCF</g:link></li>
+						<li><g:link url="${grails.util.Holders.config.gscf.baseURL}">Go to GSCF</g:link></li>
 					</ul>
 				</li>
 			</content>
@@ -69,7 +68,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-EN" xml:lang="en-EN">
 	<head>
-		<title><g:layoutTitle default="${ConfigurationHolder.config.module.name} | dbXP"/></title>
+		<title><g:layoutTitle default="${grails.util.Holders.config.module.name} | dbXP"/></title>
 		<link rel="shortcut icon" href="${resource(dir: 'images', file: 'favicon.ico', plugin: 'dbxpModuleBase' )}" type="image/x-icon"/>
 		
 		<% /* require modules from the resources plugin */ %>
@@ -128,7 +127,7 @@
 	</head>
 	<body>
 		<div id="header">
-			<div id="logo">${ConfigurationHolder.config.module.name}</div>
+			<div id="logo">${grails.util.Holders.config.module.name}</div>
 		    <ul class="topnav">
 				<% /* Include topnav as specified by the page */ %>
 				<g:pageProperty name="page.topnav" />
